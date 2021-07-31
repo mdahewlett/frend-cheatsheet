@@ -1,4 +1,33 @@
-* {
-    text-align: left;
-    vertical-align: top;
-  }
+body {
+  background-color: burlywood;
+  text-align: left;
+  vertical-align: top;
+  font-family: monospace;
+  color: darkslategray;
+}
+
+h1 {
+  color: darkslateblue;
+}
+
+h2 {
+  color: cornsilk;
+}
+
+table {
+  border: 2px solid cornsilk;
+  border-spacing: 10px 5px;
+}
+
+thead {
+  color: cornsilk;
+}
+
+td {
+  border-bottom: 1px solid cornsilk;
+}
+
+table tr td:nth-child(1) {
+  color: darkslateblue;
+  font-weight: bold;
+}

@@ -9,79 +9,98 @@
     </header>
     <main>
       <p>Describing what content is rather than how it looks.</p>
+      <h2>Structure</h2>
       <table>
         <thead>
-          <tr>
             <th>Tag</th>
             <th>Name</th>
             <th>Description</th>
-          </tr>
         </thead>
         <tbody>
           <tr>
-            <th>&lt;header&gt;</th>
-            <th>Header</th>
-            <th>Within the body, this tag ids the title</th>
+            <td>&lt;header&gt;</th>
+            <td>Header</th>
+            <td>Within the body, this tag ids the title</th>
           </tr>
           <tr>
-            <th>&lt;nav&gt;</th>
-            <th>Nav</th>
-            <th>Within the header, this ids the navigation links</th>
+            <td>&lt;nav&gt;</th>
+            <td>Navigation</th>
+            <td>Within the header, this ids the navigation links</th>
           </tr>
           <tr>
-            <th>&lt;main&gt;</th>
-            <th>Main</th>
-            <th>The rest of the content (except for the footer) goes in here</th>
+            <td>&lt;main&gt;</th>
+            <td>Main</th>
+            <td>The rest of the content (except for the footer) goes in here</th>
           </tr>
           <tr>
-            <th>&lt;footer&gt;</th>
-            <th>Footer</th>
-            <th>Right now this is not a terribly useful section. Its where I'd put contact info, copyright, terms of use, site map, or more nav links</th>
+            <td>&lt;footer&gt;</th>
+            <td>Footer</th>
+            <td>Right now this is not a terribly useful section. Its where I'd put contact info, copyright, terms of use, site map, or more nav links</th>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Content</h2>
+      <table>
+        <thead>
+          <th>Tag</th>
+          <th>Name</th>
+          <th>Description</th>
+        </thead>  
+        <tbody>
+          <tr>
+            <td>&lt;section&gt;</th>
+            <td>Section</th>
+            <td>This wraps around content with the same theme</th>
           </tr>
           <tr>
-            <th>&lt;section&gt;</th>
-            <th>Section</th>
-            <th>This wraps around content with the same theme</th>
+            <td>&lt;article&gt;</th>
+            <td>Article</th>
+            <td>This wraps around content that can make sense on its own</th>
           </tr>
           <tr>
-            <th>&lt;article&gt;</th>
-            <th>Article</th>
-            <th>This wraps around content that can make sense on its own</th>
+            <td>&lt;aside&gt;</th>
+            <td>Aside</th>
+            <td>Put content here that is extra. This is also where ads go</th>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Media</h2> 
+      <table>
+        <thead>
+          <th>Tag</th>
+          <th>Name</th>
+          <th>Description</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&lt;figure&gt;</th>
+            <td>Figure</th>
+            <td>This wraps around all media</th>
           </tr>
           <tr>
-            <th>&lt;aside&gt;</th>
-            <th>Aside</th>
-            <th>Put content here that is extra. This is also where ads go</th>
+            <td>&lt;figcaption&gt;</th>
+            <td>Caption</th>
+            <td>Use this to make a comment about the photo that users and screen readers both see</th>
           </tr>
           <tr>
-            <th>&lt;figure&gt;</th>
-            <th>Figure</th>
-            <th>This wraps around all media</th>
+            <td>&lt;video&gt;</th>
+            <td>Video</th>
+            <td>In addition to src, video takes controls (play/pause), loop (loops through video), and autoplay. The text you put between &lt;video&gt;&lt;/video&gt; is what screen readers get or people when the video does not load</th>
           </tr>
           <tr>
-            <th>&lt;figcaption&gt;</th>
-            <th>Caption</th>
-            <th>Use this to make a comment about the photo that users and screen readers both see</th>
+            <td>&lt;audio&gt;</th>
+            <td>Audio</th>
+            <td>Like video, this takes src and controls, though src goes into a &lt;source&gt; tag. Audio also takes type to specify the audio format like audio/mp3</th>
           </tr>
           <tr>
-            <th>&lt;video&gt;</th>
-            <th>Video</th>
-            <th>In addition to src, video takes controls (play/pause), loop (loops through video), and autoplay. The text you put between &lt;video&gt;&lt;/video&gt; is what screen readers get or people when the video does not load</th>
+            <td>&lt;embed&gt;</th>
+            <td>Embed</th>
+            <td>This brings in media from external sources. This is depreciated and you should use video, audio and img instead</th>
           </tr>
           <tr>
-            <th>&lt;audio&gt;</th>
-            <th>Audio</th>
-            <th>Like video, this takes src and controls, though src goes into a &lt;source&gt; tag. Audio also takes type to specify the audio format like audio/mp3</th>
-          </tr>
-          <tr>
-            <th>&lt;embed&gt;</th>
-            <th>Embed</th>
-            <th>This brings in media from external sources. This is depreciated and you should use video, audio and img instead</th>
-          </tr>
-          <tr>
-            <th>&lt;link&gt;</th>
-            <th>Link</th>
-            <th>This is not actually semantic html, but I find it more descriptive than &lt;a&gt;</th>
+            <td>&lt;link&gt;</th>
+            <td>Link</th>
+            <td>This is not actually semantic html, but I find it more descriptive than &lt;a&gt;</th>
           </tr>
         </tbody>
       </table>
